@@ -1,0 +1,424 @@
+ 
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Navbar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: rgb(182, 236, 182);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: green;
+  }
+
+  /* Home Section */
+  .home {
+    height: 600px;
+    position: relative;
+  }
+
+  .box1 {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-size: 30px;
+  }
+
+  .btn1 {
+    margin-top: 5px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .btn1:hover {
+    color: green;
+    transition: color 0.3s;
+  }
+
+  .picture {
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    width: 500px;
+    height: 400px;
+    background-color: grey;
+  }
+
+  /* Medicine Section */
+  .medicine {
+    height: 650px;
+    overflow-y: hidden;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0 100px;
+  }
+
+  .text h1 {
+    font-size: 45px;
+  }
+
+  .inp input {
+    padding: 10px;
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .inp {
+    margin-top: 5px;
+    position: relative;
+  }
+
+  .inp i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-ms-clear {
+    display: none;
+  }
+
+  .cotainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 50px;
+  }
+
+  .products {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .products img {
+    width: 100px;
+    height: 100px;
+  }
+
+ * {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;  
+}
+
+/* navbar */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 10%;
+    background-color: rgb(182, 236, 182);
+    border-radius: px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;  
+    font-weight: bold;  
+}
+
+nav ul li a:hover {
+    color: green;
+    transition: color 0.3s;
+}
+
+/* end */
+
+
+
+/* first page */
+
+    .home{
+      height: 600px;
+    }
+    .box1{
+        position: relative;
+        left: 100px;
+        top: 250px;
+        font-size: 30px;
+    }
+
+
+    .btn1{
+        margin-top: 5px;
+        height: 40px;
+        width: 170px;
+        border-radius: 10px;
+        
+    }
+
+    .btn1:hover{
+        color: green;
+        transition: color 0.3s;
+    }
+
+    .picture{
+        position: relative;
+        left: 700px;
+        top: -15px;
+        background-color: grey;
+        height: 400px;
+        width: 500px;
+   }
+
+/* end */
+
+/* medicine */
+  .medicine{
+    height: 650px;
+     overflow-y: hidden;
+   }
+
+   .text{
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 10%;
+        padding-top: 70px;
+        
+   }
+   .text h1{
+        font-size: 45px;
+
+   }
+    
+   .inp input{
+        padding: 10px;
+        width: 350px;
+        border-radius: 20px;
+      
+   }
+   .inp{
+     
+        margin-top: 5px;
+   }
+
+    .inp i{
+        position: relative;
+        left: -35px;
+        top: 3px;
+        cursor: pointer;
+    }
+
+    input[type="search"]::-webkit-search-cancel-button {
+        display: none;
+    }
+
+
+    input[type="search"]::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+  
+    .cotainer
+	{
+	    padding: 1rem 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+        position: relative;
+        right: 15px;
+        top: 50px;
+	}
+
+    .products img{
+        height: 100px;
+        width: 100px;
+    }
+    .products {
+        display: grid;
+    justify-items: center;
+    }
+
+  /* Prescription Section */
+  .Prescription {
+    height: 650px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .faq_form{
+     display: flex;
+    justify-content: space-between; /* space between the two boxes */
+    align-items: center; /* optional: vertical alignment */
+    margin-left: 100px;
+    margin-right: 100px;
+   overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 13% 0 100px;
+  }
+
+  .text2 h1 {
+    font-size: 45px;
+  }
+
+  .container2 {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .inputs {
+    position: relative;
+    left: 100px;
+    top: 50px;
+  }
+
+  .input input {
+    width: 480px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+
+  .file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .file-upload-button {
+    background-color: rgb(203, 241, 203);
+    border: 2px solid #000;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .file-upload-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  #image {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .btn0 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .btn button {
+    background-color: rgb(203, 241, 203);
+    border: 2px solid #000;
+    padding: 15px 65px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+
+  .faq1 {
+    background-color: grey;
+    width: 490px;
+    height: 400px;
+    position: relative;
+    top: 40px;
+  }
+
+ 
+
+
+/* end */
+
+
+
+ 
